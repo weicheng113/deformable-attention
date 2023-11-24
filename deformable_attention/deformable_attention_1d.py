@@ -140,6 +140,7 @@ class DeformableAttention1D(nn.Module):
 
     def forward(self, x, return_vgrid = False):
         """
+        x: shape[bs, seq_len, dim]
         b - batch
         h - heads
         n - sequence dimension
